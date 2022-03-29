@@ -18,7 +18,27 @@
 <body>
 
   <form action="">
-    <label for="message">Message *</label>
+    <label for="name">Nume*</label>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Nume"
+      minlength="5"
+      maxlength="30"
+      required
+    ><br>
+    <label for="surname">Surname*</label>
+    <input
+      type="text"
+      name="surname"
+      id="surname"
+      placeholder="Prenume"
+      minlength="5"
+      maxlength="30"
+      required
+    >
+    <label for="message">Message*</label>
     <textarea
       name="message"
       id="message"
@@ -27,9 +47,18 @@
       placeholder="Mesaj"
       required
     ></textarea> <br> <br>
-
+    <label for="details">Details*</label>
+    <textarea
+      name="details"
+      id="details"
+      placeholder="Detalii"
+      cols="30"
+      rows="8"
+    ></textarea>
+    <br>
     <button
       type="submit"
+      name="submit"
       title="Trimite"
     >Trimite</button>
   </form>
